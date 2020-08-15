@@ -17,8 +17,45 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        customizeNavigationControllers()
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = createTabbar()
+        window?.makeKeyAndVisible()
     }
+    
+    func createPeriodicTableNC() -> UINavigationController {
+        let periodicTableVC = PeriodicTableVC()
+        periodicTableVC.title = "Periodic Table"
+        let periodicTableVCTabBarImage = UIImage(systemName: "table.fill")
+        periodicTableVC.tabBarItem = UITabBarItem(title: "Periodic Table", image: periodicTableVCTabBarImage, tag: 0)
+        
+        return UINavigationController(rootViewController: periodicTableVC)
+    }
+    
+    func createCalculateMolarMassNC() -> UINavigationController {
+        let calculateMolarMassVC = CalculateMolarMassVC()
+        calculateMolarMassVC.title = "Calculate Molar Mass"
+        let calculateMolarMassVCTabBarImage = UIImage(systemName: "plus.square.fill")
+        calculateMolarMassVC.tabBarItem = UITabBarItem(title: "Molar Mass", image: calculateMolarMassVCTabBarImage, tag: 1)
+
+        return UINavigationController(rootViewController: calculateMolarMassVC)
+    }
+    
+    func createTabbar() -> UITabBarController {
+        let tabbar = UITabBarController()
+        UITabBar.appearance().tintColor = .primaryColor
+        tabbar.viewControllers = [createPeriodicTableNC(), createCalculateMolarMassNC()]
+
+        return tabbar
+    }
+    
+    func customizeNavigationControllers() {
+        UIBarButtonItem.appearance().tintColor = .primaryColor
+    }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

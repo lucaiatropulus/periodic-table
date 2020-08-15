@@ -7,23 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390022E924D7996300F52B51 /* PTSystemLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390022E824D7996300F52B51 /* PTSystemLabel.swift */; };
+		3921AEF924D77C2B0089B570 /* ElementDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3921AEF824D77C2B0089B570 /* ElementDetailsVC.swift */; };
+		394D3FF824DF47CE000D0648 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FF724DF47CE000D0648 /* UIColor+Ext.swift */; };
+		394D3FFA24DF4AC4000D0648 /* CalculateMolarMassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FF924DF4AC4000D0648 /* CalculateMolarMassVC.swift */; };
+		394D3FFC24DF549F000D0648 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FFB24DF549F000D0648 /* Compound.swift */; };
+		394D3FFF24DF7204000D0648 /* PTMolarMassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FFE24DF7204000D0648 /* PTMolarMassView.swift */; };
+		394D400124DF7EEE000D0648 /* MollarMassDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D400024DF7EEE000D0648 /* MollarMassDetailCell.swift */; };
 		3965A0BA24D76C26001C6D79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0B924D76C26001C6D79 /* AppDelegate.swift */; };
 		3965A0BC24D76C26001C6D79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0BB24D76C26001C6D79 /* SceneDelegate.swift */; };
-		3965A0BE24D76C26001C6D79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0BD24D76C26001C6D79 /* ViewController.swift */; };
-		3965A0C124D76C26001C6D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3965A0BF24D76C26001C6D79 /* Main.storyboard */; };
 		3965A0C324D76C28001C6D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3965A0C224D76C28001C6D79 /* Assets.xcassets */; };
 		3965A0C624D76C28001C6D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3965A0C424D76C28001C6D79 /* LaunchScreen.storyboard */; };
+		3965A0CE24D76C99001C6D79 /* PeriodicTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0CD24D76C99001C6D79 /* PeriodicTableVC.swift */; };
+		3965A0D324D76D31001C6D79 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0D224D76D31001C6D79 /* ViewController+Ext.swift */; };
+		3965A0D624D76D9A001C6D79 /* PTAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0D524D76D9A001C6D79 /* PTAlertVC.swift */; };
+		3965A0D924D76E02001C6D79 /* PTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0D824D76E02001C6D79 /* PTBodyLabel.swift */; };
+		3965A0DB24D76E2C001C6D79 /* PTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0DA24D76E2C001C6D79 /* PTLabel.swift */; };
+		3965A0DD24D76E66001C6D79 /* PTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0DC24D76E66001C6D79 /* PTTitleLabel.swift */; };
+		3965A0DF24D76E91001C6D79 /* PTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0DE24D76E91001C6D79 /* PTButton.swift */; };
+		3965A0E424D76EE9001C6D79 /* ElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0E324D76EE9001C6D79 /* ElementCell.swift */; };
+		3965A0E724D76F58001C6D79 /* PTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0E624D76F58001C6D79 /* PTError.swift */; };
+		3965A0E924D76F76001C6D79 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0E824D76F76001C6D79 /* Element.swift */; };
+		3965A0EC24D76FC8001C6D79 /* DataLoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0EB24D76FC8001C6D79 /* DataLoadingManager.swift */; };
+		3965A0F024D7706D001C6D79 /* periodictable.json in Resources */ = {isa = PBXBuildFile; fileRef = 3965A0EF24D7706D001C6D79 /* periodictable.json */; };
+		39A75CD824DDB14400A47F04 /* PTPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A75CD724DDB14400A47F04 /* PTPropertyView.swift */; };
+		39A75CDA24DDB53400A47F04 /* PTCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A75CD924DDB53400A47F04 /* PTCategoryView.swift */; };
+		39A75CDD24DDDBA200A47F04 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A75CDC24DDDBA200A47F04 /* Constants.swift */; };
+		39A75CDF24DDF31500A47F04 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A75CDE24DDF31500A47F04 /* Helper.swift */; };
+		39A75CE124DDFF5000A47F04 /* WikipediaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A75CE024DDFF5000A47F04 /* WikipediaButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3965A0B624D76C26001C6D79 /* PeriodicTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriodicTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		390022E824D7996300F52B51 /* PTSystemLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSystemLabel.swift; sourceTree = "<group>"; };
+		3921AEF824D77C2B0089B570 /* ElementDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementDetailsVC.swift; sourceTree = "<group>"; };
+		394D3FF724DF47CE000D0648 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		394D3FF924DF4AC4000D0648 /* CalculateMolarMassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateMolarMassVC.swift; sourceTree = "<group>"; };
+		394D3FFB24DF549F000D0648 /* Compound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
+		394D3FFE24DF7204000D0648 /* PTMolarMassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTMolarMassView.swift; sourceTree = "<group>"; };
+		394D400024DF7EEE000D0648 /* MollarMassDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MollarMassDetailCell.swift; sourceTree = "<group>"; };
+		3965A0B624D76C26001C6D79 /* Periodic Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Periodic Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3965A0B924D76C26001C6D79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3965A0BB24D76C26001C6D79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3965A0BD24D76C26001C6D79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3965A0C024D76C26001C6D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3965A0C224D76C28001C6D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3965A0C524D76C28001C6D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3965A0C724D76C28001C6D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3965A0CD24D76C99001C6D79 /* PeriodicTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableVC.swift; sourceTree = "<group>"; };
+		3965A0D224D76D31001C6D79 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		3965A0D524D76D9A001C6D79 /* PTAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTAlertVC.swift; sourceTree = "<group>"; };
+		3965A0D824D76E02001C6D79 /* PTBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTBodyLabel.swift; sourceTree = "<group>"; };
+		3965A0DA24D76E2C001C6D79 /* PTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTLabel.swift; sourceTree = "<group>"; };
+		3965A0DC24D76E66001C6D79 /* PTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTitleLabel.swift; sourceTree = "<group>"; };
+		3965A0DE24D76E91001C6D79 /* PTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTButton.swift; sourceTree = "<group>"; };
+		3965A0E324D76EE9001C6D79 /* ElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCell.swift; sourceTree = "<group>"; };
+		3965A0E624D76F58001C6D79 /* PTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTError.swift; sourceTree = "<group>"; };
+		3965A0E824D76F76001C6D79 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		3965A0EB24D76FC8001C6D79 /* DataLoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingManager.swift; sourceTree = "<group>"; };
+		3965A0EF24D7706D001C6D79 /* periodictable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = periodictable.json; sourceTree = "<group>"; };
+		39A75CD724DDB14400A47F04 /* PTPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPropertyView.swift; sourceTree = "<group>"; };
+		39A75CD924DDB53400A47F04 /* PTCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTCategoryView.swift; sourceTree = "<group>"; };
+		39A75CDC24DDDBA200A47F04 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		39A75CDE24DDF31500A47F04 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		39A75CE024DDFF5000A47F04 /* WikipediaButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +92,7 @@
 		3965A0B724D76C26001C6D79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3965A0B624D76C26001C6D79 /* PeriodicTable.app */,
+				3965A0B624D76C26001C6D79 /* Periodic Table.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +100,117 @@
 		3965A0B824D76C26001C6D79 /* PeriodicTable */ = {
 			isa = PBXGroup;
 			children = (
+				3965A0EF24D7706D001C6D79 /* periodictable.json */,
 				3965A0B924D76C26001C6D79 /* AppDelegate.swift */,
 				3965A0BB24D76C26001C6D79 /* SceneDelegate.swift */,
-				3965A0BD24D76C26001C6D79 /* ViewController.swift */,
-				3965A0BF24D76C26001C6D79 /* Main.storyboard */,
-				3965A0C224D76C28001C6D79 /* Assets.xcassets */,
 				3965A0C424D76C28001C6D79 /* LaunchScreen.storyboard */,
+				39A75CDB24DDDB9300A47F04 /* Helper Files */,
+				3965A0D124D76D1B001C6D79 /* Extensions */,
+				3965A0EA24D76FB5001C6D79 /* Managers */,
+				3965A0E524D76F41001C6D79 /* Models */,
+				3965A0D724D76DD5001C6D79 /* Views */,
+				3965A0D424D76D78001C6D79 /* Controllers */,
+				3965A0C224D76C28001C6D79 /* Assets.xcassets */,
 				3965A0C724D76C28001C6D79 /* Info.plist */,
 			);
 			path = PeriodicTable;
+			sourceTree = "<group>";
+		};
+		3965A0D124D76D1B001C6D79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0D224D76D31001C6D79 /* ViewController+Ext.swift */,
+				394D3FF724DF47CE000D0648 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3965A0D424D76D78001C6D79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0CD24D76C99001C6D79 /* PeriodicTableVC.swift */,
+				394D3FF924DF4AC4000D0648 /* CalculateMolarMassVC.swift */,
+				3921AEF824D77C2B0089B570 /* ElementDetailsVC.swift */,
+				3965A0D524D76D9A001C6D79 /* PTAlertVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3965A0D724D76DD5001C6D79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39A75CD624DDB0CB00A47F04 /* Custom Views */,
+				3965A0E224D76ED4001C6D79 /* Cells */,
+				3965A0E124D76EC5001C6D79 /* Buttons */,
+				3965A0E024D76EB3001C6D79 /* Labels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3965A0E024D76EB3001C6D79 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0DC24D76E66001C6D79 /* PTTitleLabel.swift */,
+				3965A0DA24D76E2C001C6D79 /* PTLabel.swift */,
+				3965A0D824D76E02001C6D79 /* PTBodyLabel.swift */,
+				390022E824D7996300F52B51 /* PTSystemLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		3965A0E124D76EC5001C6D79 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0DE24D76E91001C6D79 /* PTButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3965A0E224D76ED4001C6D79 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0E324D76EE9001C6D79 /* ElementCell.swift */,
+				394D400024DF7EEE000D0648 /* MollarMassDetailCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3965A0E524D76F41001C6D79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0E624D76F58001C6D79 /* PTError.swift */,
+				3965A0E824D76F76001C6D79 /* Element.swift */,
+				394D3FFB24DF549F000D0648 /* Compound.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3965A0EA24D76FB5001C6D79 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3965A0EB24D76FC8001C6D79 /* DataLoadingManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		39A75CD624DDB0CB00A47F04 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				39A75CD724DDB14400A47F04 /* PTPropertyView.swift */,
+				394D3FFE24DF7204000D0648 /* PTMolarMassView.swift */,
+				39A75CD924DDB53400A47F04 /* PTCategoryView.swift */,
+				39A75CE024DDFF5000A47F04 /* WikipediaButtonView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		39A75CDB24DDDB9300A47F04 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				39A75CDC24DDDBA200A47F04 /* Constants.swift */,
+				39A75CDE24DDF31500A47F04 /* Helper.swift */,
+			);
+			path = "Helper Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +230,7 @@
 			);
 			name = PeriodicTable;
 			productName = PeriodicTable;
-			productReference = 3965A0B624D76C26001C6D79 /* PeriodicTable.app */;
+			productReference = 3965A0B624D76C26001C6D79 /* Periodic Table.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,8 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3965A0C624D76C28001C6D79 /* LaunchScreen.storyboard in Resources */,
+				3965A0F024D7706D001C6D79 /* periodictable.json in Resources */,
 				3965A0C324D76C28001C6D79 /* Assets.xcassets in Resources */,
-				3965A0C124D76C26001C6D79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +284,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3965A0BE24D76C26001C6D79 /* ViewController.swift in Sources */,
+				39A75CDA24DDB53400A47F04 /* PTCategoryView.swift in Sources */,
+				3965A0D924D76E02001C6D79 /* PTBodyLabel.swift in Sources */,
 				3965A0BA24D76C26001C6D79 /* AppDelegate.swift in Sources */,
+				390022E924D7996300F52B51 /* PTSystemLabel.swift in Sources */,
+				3965A0E724D76F58001C6D79 /* PTError.swift in Sources */,
+				394D3FFA24DF4AC4000D0648 /* CalculateMolarMassVC.swift in Sources */,
+				394D3FFF24DF7204000D0648 /* PTMolarMassView.swift in Sources */,
+				3965A0E924D76F76001C6D79 /* Element.swift in Sources */,
+				394D400124DF7EEE000D0648 /* MollarMassDetailCell.swift in Sources */,
+				3965A0EC24D76FC8001C6D79 /* DataLoadingManager.swift in Sources */,
+				39A75CDF24DDF31500A47F04 /* Helper.swift in Sources */,
+				3965A0DD24D76E66001C6D79 /* PTTitleLabel.swift in Sources */,
+				39A75CE124DDFF5000A47F04 /* WikipediaButtonView.swift in Sources */,
+				39A75CD824DDB14400A47F04 /* PTPropertyView.swift in Sources */,
 				3965A0BC24D76C26001C6D79 /* SceneDelegate.swift in Sources */,
+				3965A0CE24D76C99001C6D79 /* PeriodicTableVC.swift in Sources */,
+				3921AEF924D77C2B0089B570 /* ElementDetailsVC.swift in Sources */,
+				394D3FF824DF47CE000D0648 /* UIColor+Ext.swift in Sources */,
+				3965A0E424D76EE9001C6D79 /* ElementCell.swift in Sources */,
+				39A75CDD24DDDBA200A47F04 /* Constants.swift in Sources */,
+				3965A0DB24D76E2C001C6D79 /* PTLabel.swift in Sources */,
+				3965A0DF24D76E91001C6D79 /* PTButton.swift in Sources */,
+				3965A0D324D76D31001C6D79 /* ViewController+Ext.swift in Sources */,
+				394D3FFC24DF549F000D0648 /* Compound.swift in Sources */,
+				3965A0D624D76D9A001C6D79 /* PTAlertVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3965A0BF24D76C26001C6D79 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3965A0C024D76C26001C6D79 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3965A0C424D76C28001C6D79 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +451,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lucaiatropulus.PeriodicTable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucaiatropulus.Periodic-Table";
+				PRODUCT_NAME = "Periodic Table";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,10 +469,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lucaiatropulus.PeriodicTable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucaiatropulus.Periodic-Table";
+				PRODUCT_NAME = "Periodic Table";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
