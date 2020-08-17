@@ -11,6 +11,7 @@ import UIKit
 class PTPropertyView: UIView {
     
     private var stackView: UIStackView!
+    
     private let containerView   = UIView()
     private let separatorView   = UIView()
     private let nameLabel       = PTLabel(textAlignment: .left, textColor: .label, fontSize: 18, fontWeight: .regular)

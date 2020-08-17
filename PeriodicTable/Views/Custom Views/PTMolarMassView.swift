@@ -10,8 +10,8 @@ import UIKit
 
 class PTMolarMassView: UIView {
     
-    private let mollarMassLabel         = PTLabel(textAlignment: .left, textColor: .label, fontSize: 18, fontWeight: .regular)
-    private let mollarMassValueLabel    = PTLabel(textAlignment: .right, textColor: .label, fontSize: 18, fontWeight: .regular)
+    private let molarMassLabel         = PTLabel(textAlignment: .left, textColor: .label, fontSize: 18, fontWeight: .regular)
+    private let molarMassValueLabel    = PTLabel(textAlignment: .right, textColor: .label, fontSize: 18, fontWeight: .regular)
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,39 +23,38 @@ class PTMolarMassView: UIView {
     }
     
     func set(value: Float) {
-        mollarMassValueLabel.text = String(format: "%.2f", value)
+        molarMassValueLabel.text = String(format: "%.2f", value)
     }
     
     private func configure() {
         backgroundColor = .systemGray6
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: 100).isActive = true
-        configureMollarMassLabel()
-        configureMollarMassValueLabel()
+        configureMolarMassLabel()
+        configureMolarMassValueLabel()
     }
     
-    private func configureMollarMassLabel() {
-        addSubview(mollarMassLabel)
-        mollarMassLabel.text = "Total"
+    private func configureMolarMassLabel() {
+        addSubview(molarMassLabel)
+        molarMassLabel.text = "Total"
         
         NSLayoutConstraint.activate([
         
-            mollarMassLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            mollarMassLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            mollarMassLabel.widthAnchor.constraint(equalTo: widthAnchor, constant: -10),
+            molarMassLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            molarMassLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            molarMassLabel.widthAnchor.constraint(equalToConstant: 140)
         
         ])
     }
     
     
-    private func configureMollarMassValueLabel() {
-        addSubview(mollarMassValueLabel)
-        
+    private func configureMolarMassValueLabel() {
+        addSubview(molarMassValueLabel)
         NSLayoutConstraint.activate([
         
-            mollarMassValueLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            mollarMassValueLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            mollarMassValueLabel.widthAnchor.constraint(equalTo: widthAnchor, constant: -10)
+            molarMassValueLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            molarMassValueLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            molarMassValueLabel.widthAnchor.constraint(equalToConstant: 140)
             
         ])
     }

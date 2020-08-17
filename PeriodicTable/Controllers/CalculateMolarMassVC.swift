@@ -22,8 +22,8 @@ class CalculateMolarMassVC: UIViewController {
     var dataSource: UITableViewDiffableDataSource<Section, Element>!
     
     var searchController        = UISearchController(searchResultsController: nil)
-    let mollarMassView          = PTMolarMassView(frame: .zero)
-    let mollarMassCategoryView  = PTCategoryView(categoryTitle: "Molar mass")
+    let molarMassView           = PTMolarMassView(frame: .zero)
+    let molarMassCategoryView   = PTCategoryView(categoryTitle: "Molar mass")
     let tableViewCategoryView   = PTCategoryView(categoryTitle: "Mass for each element")
     
 
@@ -83,8 +83,8 @@ class CalculateMolarMassVC: UIViewController {
     private func configureUI() {
         view.backgroundColor = .systemGray6
         configureSearchController()
-        configureMollarMassCategoryView()
-        configureMollarMassView()
+        configureMolarMassCategoryView()
+        configureMolarMassView()
         configureTableViewCategoryView()
         configureTableView()
         configureDataSource()
@@ -101,25 +101,25 @@ class CalculateMolarMassVC: UIViewController {
         definesPresentationContext                              = true
     }
     
-    private func configureMollarMassCategoryView() {
-        view.addSubview(mollarMassCategoryView)
+    private func configureMolarMassCategoryView() {
+        view.addSubview(molarMassCategoryView)
         NSLayoutConstraint.activate([
         
-            mollarMassCategoryView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            mollarMassCategoryView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            mollarMassCategoryView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            molarMassCategoryView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            molarMassCategoryView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            molarMassCategoryView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         
         ])
     }
     
-    private func configureMollarMassView() {
-        view.addSubview(mollarMassView)
+    private func configureMolarMassView() {
+        view.addSubview(molarMassView)
 
         NSLayoutConstraint.activate([
         
-            mollarMassView.topAnchor.constraint(equalTo: mollarMassCategoryView.bottomAnchor),
-            mollarMassView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            mollarMassView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            molarMassView.topAnchor.constraint(equalTo: molarMassCategoryView.bottomAnchor),
+            molarMassView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            molarMassView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         
         ])
     }
@@ -129,7 +129,7 @@ class CalculateMolarMassVC: UIViewController {
         
         NSLayoutConstraint.activate([
         
-            tableViewCategoryView.topAnchor.constraint(equalTo: mollarMassView.bottomAnchor),
+            tableViewCategoryView.topAnchor.constraint(equalTo: molarMassView.bottomAnchor),
             tableViewCategoryView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableViewCategoryView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
     
@@ -147,7 +147,7 @@ class CalculateMolarMassVC: UIViewController {
         tableView.backgroundColor                           = .clear
         tableView.delegate                                  = self
         tableView.showsVerticalScrollIndicator              = true
-        tableView.register(MollarMassDetailCell.self, forCellReuseIdentifier: MollarMassDetailCell.reuseID)
+        tableView.register(MolarMassDetailCell.self, forCellReuseIdentifier: MolarMassDetailCell.reuseID)
         
         NSLayoutConstraint.activate([
         
@@ -162,7 +162,7 @@ class CalculateMolarMassVC: UIViewController {
     private func configureDataSource() {
         dataSource = UITableViewDiffableDataSource(tableView: tableView, cellProvider: { [weak self] tableView, indexPath, element -> UITableViewCell? in
             guard let self = self else { return UITableViewCell() }
-            let cell = tableView.dequeueReusableCell(withIdentifier: MollarMassDetailCell.reuseID) as! MollarMassDetailCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: MolarMassDetailCell.reuseID) as! MolarMassDetailCell
             cell.set(element: element, atomicValues: self.atomicValues)
             return cell
         })
@@ -208,7 +208,7 @@ extension CalculateMolarMassVC: UISearchResultsUpdating, UISearchBarDelegate {
         }
         
         if !isSearchBarEmpty {
-            mollarMassView.set(value: calculateMolarMass(for: searchBar.text!))
+            molarMassView.set(value: calculateMolarMass(for: searchBar.text!))
             updateData(with: elementsInCompound, animated: true)
             
         }

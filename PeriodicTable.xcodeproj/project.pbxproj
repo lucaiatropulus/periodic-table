@@ -13,7 +13,7 @@
 		394D3FFA24DF4AC4000D0648 /* CalculateMolarMassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FF924DF4AC4000D0648 /* CalculateMolarMassVC.swift */; };
 		394D3FFC24DF549F000D0648 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FFB24DF549F000D0648 /* Compound.swift */; };
 		394D3FFF24DF7204000D0648 /* PTMolarMassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D3FFE24DF7204000D0648 /* PTMolarMassView.swift */; };
-		394D400124DF7EEE000D0648 /* MollarMassDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D400024DF7EEE000D0648 /* MollarMassDetailCell.swift */; };
+		394D400124DF7EEE000D0648 /* MolarMassDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394D400024DF7EEE000D0648 /* MolarMassDetailCell.swift */; };
 		3965A0BA24D76C26001C6D79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0B924D76C26001C6D79 /* AppDelegate.swift */; };
 		3965A0BC24D76C26001C6D79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965A0BB24D76C26001C6D79 /* SceneDelegate.swift */; };
 		3965A0C324D76C28001C6D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3965A0C224D76C28001C6D79 /* Assets.xcassets */; };
@@ -44,7 +44,7 @@
 		394D3FF924DF4AC4000D0648 /* CalculateMolarMassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateMolarMassVC.swift; sourceTree = "<group>"; };
 		394D3FFB24DF549F000D0648 /* Compound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
 		394D3FFE24DF7204000D0648 /* PTMolarMassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTMolarMassView.swift; sourceTree = "<group>"; };
-		394D400024DF7EEE000D0648 /* MollarMassDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MollarMassDetailCell.swift; sourceTree = "<group>"; };
+		394D400024DF7EEE000D0648 /* MolarMassDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolarMassDetailCell.swift; sourceTree = "<group>"; };
 		3965A0B624D76C26001C6D79 /* Periodic Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Periodic Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3965A0B924D76C26001C6D79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3965A0BB24D76C26001C6D79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				3965A0E324D76EE9001C6D79 /* ElementCell.swift */,
-				394D400024DF7EEE000D0648 /* MollarMassDetailCell.swift */,
+				394D400024DF7EEE000D0648 /* MolarMassDetailCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				394D3FFA24DF4AC4000D0648 /* CalculateMolarMassVC.swift in Sources */,
 				394D3FFF24DF7204000D0648 /* PTMolarMassView.swift in Sources */,
 				3965A0E924D76F76001C6D79 /* Element.swift in Sources */,
-				394D400124DF7EEE000D0648 /* MollarMassDetailCell.swift in Sources */,
+				394D400124DF7EEE000D0648 /* MolarMassDetailCell.swift in Sources */,
 				3965A0EC24D76FC8001C6D79 /* DataLoadingManager.swift in Sources */,
 				39A75CDF24DDF31500A47F04 /* Helper.swift in Sources */,
 				3965A0DD24D76E66001C6D79 /* PTTitleLabel.swift in Sources */,

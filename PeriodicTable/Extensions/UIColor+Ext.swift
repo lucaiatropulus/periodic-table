@@ -11,6 +11,6 @@ import UIKit
 extension UIColor {
     
     static let secondaryColor: UIColor = .systemBlue
-    static let primaryColor: UIColor = UIColor(named: "primaryColor")!
+    static let primaryColor: UIColor = .label
     
 }

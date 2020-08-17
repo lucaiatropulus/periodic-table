@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MollarMassDetailCell: UITableViewCell {
+class MolarMassDetailCell: UITableViewCell {
 
     static let reuseID = "MollarMassDetailCell"
     
@@ -45,7 +45,7 @@ class MollarMassDetailCell: UITableViewCell {
         
             symbolLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             symbolLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            symbolLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -10),
+            symbolLabel.widthAnchor.constraint(equalToConstant: 140)
         
         ])
     }
@@ -57,7 +57,7 @@ class MollarMassDetailCell: UITableViewCell {
         
             valueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             valueLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            valueLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, constant: -10)
+            valueLabel.widthAnchor.constraint(equalToConstant: 140)
             
         ])
     }
